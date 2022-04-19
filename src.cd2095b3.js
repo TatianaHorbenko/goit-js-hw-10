@@ -12,6 +12,6 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"QNx4":[function(require,module,exports) {
 "use strict";var e=i(require("./fetchCountries")),n=i(require("lodash.debounce")),t=require("notiflix/build/notiflix-notify-aio");function i(e){return e&&e.__esModule?e:{default:e}}const o=300,a=document.querySelector("#search-box"),l=document.querySelector(".country-list"),u=document.querySelector(".country-info");function r(){const n=a.value.trim();l.innerHTML="",u.innerHTML="",n&&(0,e.default)(n).then(function(e){if(e.length>10)return void t.Notify.info("Too many matches found. Please enter a more specific name.");!function(e){const n=e.map(({flags:{svg:e},name:{official:n}})=>`<li><img src="${e}" alt="${n}" width="80" height="50"/>${n}</li>`).join("");if(1===e.length){const n=Object.values(e[0].languages).join(", "),t=`<ul>\n      <li>Capital: ${e[0].capital}</li>\n      <li>Population: ${e[0].population}</li>\n      <li>Languages: ${n}</li>\n      </ul>`;u.insertAdjacentHTML("afterbegin",t)}l.insertAdjacentHTML("afterbegin",n)}(e)}).catch(e=>{t.Notify.failure("Oops, there is no country with that name"),console.log(e)})}a.addEventListener("input",(0,n.default)(r,300));
 },{"./fetchCountries":"irxn","lodash.debounce":"PZFh","notiflix/build/notiflix-notify-aio":"MeeU"}],"Focm":[function(require,module,exports) {
-"use strict";require("./css/styles.css"),require("./js/countries.js");const s=300;
+"use strict";require("./css/styles.css"),require("./js/countries.js");
 },{"./css/styles.css":"krre","./js/countries.js":"QNx4"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.39d195ce.js.map
+//# sourceMappingURL=/parcel-project-template/src.cd2095b3.js.map
