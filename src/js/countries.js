@@ -37,7 +37,7 @@ function onInputChange() {
   function markup(data) {
     const markupData = data
       .map(({ flags: { svg }, name: { official } }) => {
-        return `<li><img src="${svg}" alt="${official}" width="80" height="40"/>${official}</li>`;
+        return `<li><img src="${svg}" alt="${official}" width="80" height="50"/>${official}</li>`;
       })
       .join('');
 
