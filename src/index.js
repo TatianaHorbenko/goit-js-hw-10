@@ -1,3 +1,3 @@
 import './css/styles.css';
-import './src/countries';
+import './main';
 
