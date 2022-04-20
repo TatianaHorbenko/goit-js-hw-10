@@ -1,4 +1,4 @@
 import './css/styles.css';
-import 'countries.js';
+import './countries';
 const DEBOUNCE_DELAY = 300;
 
